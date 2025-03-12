@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    position: relative;
+    min-height: 4096px;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: 70px; 
+    width: 100%;
+    background-color: rgb(24, 16, 58);
+    color: #fff;
+  }
+
+  .footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
