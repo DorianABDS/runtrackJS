@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper purple lighten-3">
+      <div class="container" style="display: flex; justify-content: start;">
+        <a href="index.html" class="brand-logo">
+          <img src="/day7/job01/img/logo.png" alt="Logo du site web" class="responsive-img"
+            style="height: 40px; width: auto;">
+        </a>
+      </div>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="index.html">Connexion</a></li>
+        <li><a href="index.html">Rechercher</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <main class="valign-wrapper" style="min-height: 100vh;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l10 offset-l1 center-align content rectangle-bg grey lighten-3">
+          <form class="col s12 py-3">
+
+            <!-- Civilité Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <p style="margin-bottom: 5px;">Civilité</p>
+                <p>
+                  <label class="mr-3">
+                    <input name="civilite" type="radio" id="monsieur" />
+                    <span>Monsieur</span>
+                  </label>
+                  <label>
+                    <input name="civilite" type="radio" id="madame" />
+                    <span>Madame</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+
+            <!-- First Name Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="first_name" type="text" class="validate" required>
+                <label for="first_name">Prénom</label>
+              </div>
+            </div>
+
+            <!-- Last Name Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">account_box</i>
+                <input id="last_name" type="text" class="validate" required>
+                <label for="last_name">Nom</label>
+              </div>
+            </div>
+
+            <!-- Address Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">home</i>
+                <input id="address" type="text" class="validate" required>
+                <label for="address">Adresse</label>
+              </div>
+            </div>
+
+            <!-- Email Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <!-- Password Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">lock</i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Mot de passe</label>
+              </div>
+            </div>
+
+            <!-- Confirm Password Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">lock_outline</i>
+                <input id="confirm_password" type="password" class="validate" required>
+                <label for="confirm_password">Confirmer le mot de passe</label>
+              </div>
+            </div>
+
+            <!-- Passion Section -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="input-field col s12 m8 offset-m2">
+                <p style="margin-bottom: 5px;">Choisissez vos passions</p>
+                <div class="row" style="margin-bottom: 5px;">
+                  <div class="col s6 m3">
+                    <label>
+                      <input type="checkbox" id="informatique" />
+                      <span>Informatique</span>
+                    </label>
+                  </div>
+                  <div class="col s6 m3">
+                    <label>
+                      <input type="checkbox" id="voyages" />
+                      <span>Voyages</span>
+                    </label>
+                  </div>
+                  <div class="col s6 m3">
+                    <label>
+                      <input type="checkbox" id="sport" />
+                      <span>Sport</span>
+                    </label>
+                  </div>
+                  <div class="col s6 m3">
+                    <label>
+                      <input type="checkbox" id="lecture" />
+                      <span>Lecture</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row" style="margin-bottom: 10px;">
+              <div class="col s12">
+                <button type="submit" class="btn waves-effect waves-light">Envoyer</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer purple lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Navigation</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Accueil</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html">Inscription</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html">Connexion</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html">Rechercher</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2025 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="https://abbadessa-dorian.fr/">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
