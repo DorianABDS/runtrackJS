@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "informations": {
+      "lastName": "ABBADESSA",
+      "firstName": "Dorian",
+      "email": "dorian.abbadessa@laplateforme.io",
+      "password": "q", 
+      "isActive": true
+    }
+  }
+  ,
+  {
+    "id": 2,
+    "informations": {
+      "lastName": "ABBADESSA",
+      "firstName": "Dorian",
+      "email": "dorian.abbadessa@laplateforme.io",
+      "password": "q", 
+      "isActive": true
+    }
+  }
+]
