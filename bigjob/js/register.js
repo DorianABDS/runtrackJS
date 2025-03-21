@@ -1,22 +1,18 @@
+let password = $("#password").val();
+
 $(document).ready(function() {
     $("#registrationForm").on("submit", function(event) {
         event.preventDefault();
         
         let email = $("#email").val();
-        let password = $("#password").val();
-        let confirmPassword = $("#confirm-password").val();
 
         if (!isEmailValid(email)) {
             alert("Seuls les membres de La Plateforme_ peuvent s'inscrire. Utilisez une adresse @laplateforme.io.");
             return;
         }
 
-        if (!doPasswordsMatch(password, confirmPassword)) {
-            alert("Les mots de passe ne correspondent pas.");
-            return;
-        }
-
         alert("Inscription réussie !");
+        window.location.href = "/bigjob/pages/connection.html"
     });
 });
 
@@ -27,9 +23,8 @@ function isEmailValid(email) {
 }
 
 // Fonction pour vérifier si les mots de passe correspondent
-function doPasswordsMatch(password, confirmPassword) {
+function doPasswordsMatch(password) {
     if (password.length < 8 || password.length > 64) {
         return false;
     }
-    return password === confirmPassword;
 }
